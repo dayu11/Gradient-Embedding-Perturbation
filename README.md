@@ -22,6 +22,8 @@ This code supports CIFAR10 and extended SVHN datasets. The following command tra
 
     CUDA_VISIBLE_DEVICES=0 python main.py  --private --rgp --clip0 5 --clip1 2 --num_bases 1000 --aux_dataset imagenet --aux_data_size 2000 --sess cifar10_GEP_default
 
+The default command evenly divides the parameters into three groups. This parameter grouping trick significantly reduces the memory cost. 
+
 You can also train with Biased-GEP with the '--rgp' flag removed.
 
     CUDA_VISIBLE_DEVICES=0 python main.py  --private --clip0 5 --num_bases 1000 --aux_dataset imagenet --aux_data_size 2000 --sess cifar10_BGEP_default
