@@ -39,3 +39,14 @@ We divide the parameters into multiple groups to reduce the computational/memory
 The default choice of auxiliary dataset is ImageNet. We downsample the samples from ImageNet and store them in the file 'imagenet_examples_2000'. You can also use samples from CIFAR100 as the auxiliary dataset, which yields similar performance.
 
     CUDA_VISIBLE_DEVICES=0 python main.py  --private --rgp  --clip0 5 --clip1 2 --num_bases 1000 --aux_dataset cifar100 --aux_data_size 2000 --sess cifar10_GEP_default
+
+# Citation
+
+```
+@inproceedings{yu2021do,
+  title={Do Not Let Privacy Overbill Utility: Gradient Embedding Perturbation for Private Learning},
+  author={Yu, Da and Zhang, Huishuai and Chen, Wei and  Liu, Tie-Yan},
+ year      = {2021},
+ booktitle = {International Conference on Learning Representations (ICLR)}
+}
+```
