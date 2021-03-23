@@ -7,13 +7,14 @@ https://openreview.net/forum?id=7aogOj_VYO0
 This code is tested on Linux system with CUDA version 11.0
 
 To run the source code, please first install the following packages:
-python>=3.6
-numpy>=1.15
-torch>=1.3
-torchvision>=0.4
-scipy
-six
-backpack-for-pytorch
+
+    python>=3.6
+    numpy>=1.15
+    torch>=1.3
+    torchvision>=0.4
+    scipy
+    six
+    backpack-for-pytorch
 
 # Example commands
 
